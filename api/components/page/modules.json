@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_page_cards",
+  "collectionName": "components_page_modules",
   "info": {
-    "name": "card",
-    "icon": "address-card"
+    "name": "modules",
+    "icon": "list-ul"
   },
   "options": {},
   "attributes": {

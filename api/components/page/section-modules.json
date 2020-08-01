@@ -13,7 +13,7 @@
     "modules": {
       "type": "component",
       "repeatable": true,
-      "component": "page.card",
+      "component": "page.modules",
       "required": true
     }
   }

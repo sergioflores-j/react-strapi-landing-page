@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-import Container from 'components/Container'
-import Heading from 'components/Heading'
+import Container from 'components/Container';
+import Heading from 'components/Heading';
 
-import faq from './content'
-import * as S from './styles'
+import * as S from './styles';
+import { SectionFaqProps } from 'types/api';
 
-const SectionFaq = () => (
+const SectionFaq = ({ title, questions }: SectionFaqProps) => (
   <S.Wrapper>
     <S.Content>
       <Container>
-        <Heading>FAQ</Heading>
+        <Heading>{title}</Heading>
 
         <S.Questions>
-          {faq.map(({ question, answer }, index) => (
+          {questions.map(({ question, answer }, index) => (
             <S.Question key={index}>
               <Heading lineBottom>{question}</Heading>
               <div dangerouslySetInnerHTML={{ __html: answer }} />
@@ -22,6 +22,7 @@ const SectionFaq = () => (
         </S.Questions>
 
         <S.ExtraQuestion>
+          {/* TODO: implementar extra questions (boolean isExtraQuestion? filtrar no retorno da api (verificar como fazer no GraphQL)?) */}
           <Heading lineBottom>Eu tenho outra dúvida!</Heading>
           <p>
             Sem problemas! Você pode acessar qualquer uma das{' '}
@@ -45,6 +46,6 @@ const SectionFaq = () => (
       </Container>
     </S.Content>
   </S.Wrapper>
-)
+);
 
-export default SectionFaq
+export default SectionFaq;

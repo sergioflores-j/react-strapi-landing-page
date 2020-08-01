@@ -1,11 +1,15 @@
 {
-  "collectionName": "components_page_teches",
+  "collectionName": "components_page_tech_icons",
   "info": {
-    "name": "tech",
+    "name": "techIcons",
     "icon": "grip-horizontal"
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
     "icon": {
       "model": "file",
       "via": "related",
@@ -13,10 +17,6 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
-    },
-    "title": {
-      "type": "string",
       "required": true
     }
   }

@@ -27,8 +27,7 @@
     "sectionAboutProject": {
       "type": "component",
       "repeatable": false,
-      "component": "page.about-project",
-      "required": false
+      "component": "page.section-about-project"
     },
     "sectionTech": {
       "type": "component",
